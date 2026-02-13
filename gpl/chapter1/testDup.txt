@@ -1,0 +1,8 @@
+This is the file to test the duplicates.
+This will show the words that occurs multiple times.
+This will show the words that occurs multiple times.
+This will show the words that occurs multiple times.
+This will show the words that occurs multiple times.
+For example this as an example.
+And this and this and this.
+And this and this and this.
