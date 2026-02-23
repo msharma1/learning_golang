@@ -15,7 +15,7 @@ func insertcomma(inputStr string) string {
 		if i != 0 && (i+1)%3 == 0 {
 			buffer.WriteString(",")
 		}
-		buffer.WriteString(string(inputStr[i]))
+		buffer.WriteByte(inputStr[i])
 	}
 	return buffer.String()
 }
