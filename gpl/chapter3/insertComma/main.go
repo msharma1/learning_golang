@@ -1,19 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+)
 
 func insertcomma(inputStr string) string {
 	n := len(inputStr)
-	holder := inputStr
+	var buffer bytes.Buffer
 	if n <= 3 {
 		return inputStr
 	}
-	for i := n - 1; i >= 0; i-- {
-		if (i+1)%3 == 0 {
-			holder = holder[:i] + "," + holder[i:]
+	for i := 0; i < n; i++ {
+		if i != 0 && (i+1)%3 == 0 {
+			buffer.WriteString(",")
 		}
+		buffer.WriteString(string(inputStr[i]))
 	}
-	return holder
+	return buffer.String()
 }
 
 func main() {
