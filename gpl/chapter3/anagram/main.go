@@ -27,5 +27,5 @@ func main() {
 		fmt.Println("unequal strings cannot be anagrams")
 		return
 	}
-	fmt.Printf("Are %s and %s anagrams?: %t\n", *string1, *string2, anagram(*string1, *string2))
+	fmt.Printf("Are %s and %s anagrams?: %v\n", *string1, *string2, anagram(*string1, *string2))
 }
