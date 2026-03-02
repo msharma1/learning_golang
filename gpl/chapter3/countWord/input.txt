@@ -1,0 +1,2 @@
+this is the words that occurs once and only once.
+And this is not alone, it has many other words that occur more than once.
